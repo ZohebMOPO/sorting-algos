@@ -10,6 +10,10 @@ function sSort(arr) {
         minIdx = j;
       }
     }
+
+    temp = arr[i];
+    arr[i] = arr[minIdx];
+    arr[minIdx] = temp;
   }
 
   return arr;
@@ -29,6 +33,9 @@ function sSort(arr) {
       }
       j++;
     }
+    temp = arr[i];
+    arr[i] = arr[minIdx];
+    arr[minIdx] = temp;
     i++;
   }
 
