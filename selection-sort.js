@@ -14,3 +14,23 @@ function sSort(arr) {
 
   return arr;
 }
+
+function sSort(arr) {
+  let minIdx,
+    temp,
+    len = arr.length;
+  let i = 0,
+    j = i++;
+  while (i < len) {
+    minIdx = 1;
+    while (j < len) {
+      if (arr[j] < arr[minIdx]) {
+        minIdx = j;
+      }
+      j++;
+    }
+    i++;
+  }
+
+  return arr;
+}
