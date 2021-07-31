@@ -13,3 +13,7 @@ class CircularQueue:
             self.head = 0
             self.tail = 0
             self.queue[self.tail] = data
+
+    def dequeue(self):
+        if(self.head == -1):
+            print("The queue is empty\n")
